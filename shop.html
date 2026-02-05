@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="icon" href="./img/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        .navbar {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            background-color: white;
+            padding: 0 10%;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 18px;
+        }
+
+        #menu-bar {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav_active {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+            z-index: 9000;
+            position: sticky;
+            top: 0;
+            left: 0;
+            transition: all 0.5s;
+        }
+
+
+        /* SECTION-FOUR*/
+
+        .product-gallery {
+            width: 100%;
+            height: auto;
+        }
+
+        .pro-one {
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+        .pro-one h1 {
+            font-weight: 500;
+            font-size: 30px;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .pro-one h1:after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            border: 2px solid red;
+            top: 40px;
+            left: 48%;
+        }
+
+        .card {
+            margin-left: 7rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 85%;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 40px;
+            text-align: center;
+            gap: 25px 30px;
+        }
+
+        .card-head:hover {
+            opacity: 0.5;
+        }
+
+        .card-one {
+            width: 100%;
+            height: 100%;
+            margin-left: 0rem;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card-one:hover {
+            cursor: pointer;
+        }
+
+        .card-head img {
+            border-radius: 7px;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-head img:hover {
+            transform: scale(1.01);
+        }
+
+        .badge {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .badge .p1 {
+            font-size: 22px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .fa-star {
+            font-size: 15px;
+            color: orange;
+        }
+
+        .btn {
+            width: 90px;
+            height: 50px;
+            background-color: rgb(230, 75, 75);
+            border: none;
+            color: white;
+            font-size: medium;
+            border-radius: 7px;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            width: 90px;
+            height: 50px;
+            background-color: rgb(230, 75, 75);
+            color: white;
+            font-size: medium;
+            border-radius: 7px;
+            border: none;
+            margin-left: 20px;
+        }
+
+        .btn1:hover {
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+            cursor: pointer;
+        }
+
+        .hover-content {
+            margin-top: 20px;
+            transition: all 0.5s;
+            transform: translateY(100%);
+            overflow: hidden;
+            transition: all 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-one:hover .hover-content {
+            transform: translateY(-10%);
+        }
+
+        .footer {
+            width: 100%;
+            height: 50vh;
+            background-color: black;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+            margin-top: 0;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            justify-items: center;
+            align-items: center;
+            padding: 8% 6%;
+            gap: 3rem;
+            color: white;
+        }
+
+        .col-first p {
+            color: white;
+            line-height: 1.5;
+        }
+
+        .col h3 {
+            font-size: 25px;
+        }
+
+        .col a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+
+        .Contact h3 {
+            font-size: 25px;
+            margin-top: 0px;
+        }
+
+        .insta img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .insta h3 {
+            font-size: 25px;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        #menu-bar {
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .cart {
+            display: inline-block;
+            position: relative;
+        }
+
+        .cart_number {
+            position: absolute;
+            top: -11px;
+            right: -0px;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            padding: 1px;
+            border-radius: 50%;
+        }
+
+        #cart_button {
+            position: relative;
+        }
+
+        .floating_nav {
+            height: 96vh;
+            width: 30%;
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            background-color: white;
+            color: black;
+            transform: translate(110%);
+            transition: all 0.5s;
+            padding: 0.8rem;
+            overflow-y: scroll;
+        }
+
+        .floating_nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .floating_active {
+            transform: translate(0%);
+        }
+
+        .floating_nav h2 {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .floating_nav ul li {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: 800;
+
+        }
+
+        .floating_nav ul {
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+        }
+
+        #list_flex {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        #addedCart_items li {
+            flex-direction: row;
+            display: flex;
+        }
+
+        #list {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: rgba(128, 128, 128, 0.23);
+        }
+
+        #citem_img {
+            height: 80px;
+            width: 80px;
+        }
+
+        .rights {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px 0;
+            font-weight: 700;
+            background-color: black;
+        }
+
+        #cross {
+            color: red;
+            font-family: Calibri;
+            cursor: pointer;
+        }
+
+        /* responsive */
+        @media screen and (max-width:576px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                background-color: rgba(128, 128, 128, 0.253);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                font-weight: 700;
+                transition: all 0.5s;
+            }
+
+            .product-gallery {
+                width: 100%;
+                height: auto;
+                margin-top: 5rem;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 25px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 35px;
+                left: 46%;
+            }
+
+            .card {
+                margin-left: 1.5rem;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 340px;
+                margin-left: 0rem;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn1 {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .hover-content {
+                margin-top: 40px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-15%);
+            }
+
+            .footer {
+                width: 100%;
+                height: 100vh;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 70px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                left: 2rem;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 100%;
+                position: absolute;
+                top: 17.5rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(110%);
+                transition: all 0.5s;
+                display: none;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+                display: block;
+            }
+        }
+
+        /* @media screen and (min-width:345px) and (max-width:376px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                display: block;
+                margin-right: 10px;
+            }
+
+            .product-gallery {
+                margin-top: 6rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 25px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 35px;
+                left: 46%;
+            }
+
+            .card {
+                margin-left: 1.7rem;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 340px;
+                margin-left: 0rem;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .footer {
+                width: 100%;
+                height: 130vh;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 70px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                position: absolute;
+                top: -11px;
+                left: 2rem;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                padding: 1px;
+                border-radius: 50%;
+            }
+
+            #cart_button {
+                position: relative;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 100%;
+                position: absolute;
+                top: 17rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(110%);
+                transition: all 0.5s;
+                padding: 0.8rem;
+                overflow-y: scroll;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+            }
+        } */
+
+        /* @media screen and (min-width:377px) and (max-width:415px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                display: block;
+                margin-right: 10px;
+            }
+
+            .product-gallery {
+                margin-top: 6rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 25px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 35px;
+                left: 46%;
+            }
+
+            .card {
+                border: 2px solid black;
+                margin-left: 2rem;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 340px;
+                margin-left: 0rem;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn1 {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .hover-content {
+                margin-top: 40px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-15%);
+            }
+
+            .footer {
+                width: 100%;
+                height: 100vh;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 70px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                position: absolute;
+                top: -11px;
+                left: 2rem;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                padding: 1px;
+                border-radius: 50%;
+            }
+
+            #cart_button {
+                position: relative;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 100%;
+                position: absolute;
+                top: 17rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(110%);
+                transition: all 0.5s;
+                padding: 0.8rem;
+                overflow-y: scroll;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+            }
+        } */
+
+        /* @media screen and (min-width:416px) and (max-width:431px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                display: block;
+                margin-right: 10px;
+            }
+
+            .product-gallery {
+                margin-top: 6rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 25px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 35px;
+                left: 46%;
+            }
+
+            .card {
+                margin-left: 2rem;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 350px;
+                margin-left: 0rem;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn1 {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .hover-content {
+                margin-top: 40px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-15%);
+            }
+
+            .footer {
+                width: 100%;
+                height: 100vh;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 70px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                position: absolute;
+                top: -11px;
+                left: 2rem;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                padding: 1px;
+                border-radius: 50%;
+            }
+
+            #cart_button {
+                position: relative;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 100%;
+                position: absolute;
+                top: 17rem;
+                right: 0px;
+                background-color: rgb(255, 255, 255);
+                color: black;
+                transform: translate(130%);
+                transition: all 0.5s;
+                padding: 0.8rem;
+                overflow-y: scroll;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+            }
+        } */
+
+        /* @media screen and (min-width:431px) and (max-width:541px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                display: block;
+                margin-right: 10px;
+            }
+
+            .product-gallery {
+                margin-top: 5rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 30px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 38px;
+                left: 46%;
+            }
+
+            .card {
+                border: 2px solid black;
+                margin-left: 2.5rem;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 400px;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn1 {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .hover-content {
+                margin-top: 40px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-15%);
+            }
+
+            .footer {
+                width: 100%;
+                height: auto;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 70px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                position: absolute;
+                top: -11px;
+                left: 2rem;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                padding: 1px;
+                border-radius: 50%;
+            }
+
+            #cart_button {
+                position: relative;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 30%;
+                position: absolute;
+                top: 17rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(130%);
+                transition: all 0.5s;
+                padding: 0.8rem;
+                overflow-y: scroll;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+            }
+        } */
+
+        @media screen and (min-width:576px) and (max-width:913px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                background-color: rgba(128, 128, 128, 0.253);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                font-weight: 700;
+                transition: all 0.5s;
+            }
+
+            .product-gallery {
+                margin-top: 5rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 30px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 38px;
+                left: 46%;
+            }
+
+            .card {
+                margin-left: 3.6rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 280px;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn1 {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .hover-content {
+                margin-top: 40px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-15%);
+            }
+
+            .footer {
+                width: 100%;
+                height: auto;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4.5rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 80px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                position: absolute;
+                top: -11px;
+                left: 2rem;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                padding: 1px;
+                border-radius: 50%;
+            }
+
+            #cart_button {
+                position: relative;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 100%;
+                position: absolute;
+                top: 17.5rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(110%);
+                transition: all 0.5s;
+                display: none;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+                display: block;
+            }
+        }
+
+        /* @media screen and (min-width:821px) and (max-width:912px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+            }
+
+            .nav_active {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                background-color: white;
+                box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+                z-index: 9000;
+                position: sticky;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+
+            #navlink {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            #navlink li {
+                padding-top: 5px;
+            }
+
+            #menu-bar {
+                display: block;
+                margin-right: 10px;
+            }
+
+            .product-gallery {
+                margin-top: 5rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 30px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                border: 2px solid red;
+                top: 38px;
+                left: 46%;
+            }
+
+            .card {
+                border: 2px solid black;
+                margin-left: 4.3rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-top: 40px;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+                overflow: hidden;
+            }
+
+            .card-head img {
+                width: 100%;
+                height: 280px;
+            }
+
+            .badge .p1 {
+                font-size: 18px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 12px;
+                color: orange;
+            }
+
+            .btn {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn1 {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .hover-content {
+                margin-top: 40px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-15%);
+            }
+
+            .footer {
+                width: 100%;
+                height: auto;
+                background-color: black;
+                margin-top: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0px;
+            }
+
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4.5rem;
+                color: white;
+            }
+
+            .col-first p {
+                color: white;
+                line-height: 1.5;
+            }
+
+            .col h3 {
+                font-size: 25px;
+                margin-right: 10rem;
+            }
+
+            .col a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                line-height: 1.5;
+            }
+
+            .Contact h3 {
+                font-size: 25px;
+                margin-top: 0px;
+            }
+
+            .col-first {
+                margin-right: 2rem;
+            }
+
+            .insta img {
+                width: 80px;
+                height: 70px;
+                margin-top: 5px;
+            }
+
+            .insta h3 {
+                font-size: 25px;
+                line-height: 1.5;
+                margin-top: 9px;
+                margin-right: 9rem;
+            }
+
+            .cart_number {
+                position: absolute;
+                top: -11px;
+                left: 2rem;
+                background-color: black;
+                color: white;
+                font-weight: 700;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                padding: 1px;
+                border-radius: 50%;
+            }
+
+            #cart_button {
+                position: relative;
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 30%;
+                position: absolute;
+                top: 17rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(130%);
+                transition: all 0.5s;
+                padding: 0.8rem;
+                overflow-y: scroll;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+            }
+        } */
+
+        @media screen and (min-width:914px) and (max-width:1282px) {
+            .product-gallery {
+                width: 100%;
+                height: auto;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            .pro-one {
+                text-align: center;
+                padding-top: 4rem;
+            }
+
+            .pro-one h1 {
+                font-weight: 500;
+                font-size: 30px;
+                position: relative;
+                margin-top: 30px;
+            }
+
+            .pro-one h1:after {
+                content: "";
+                position: absolute;
+                width: 60px;
+                border: 2px solid red;
+                top: 40px;
+                left: 48%;
+            }
+
+            .card {
+                margin-left: 3.2rem;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                width: 90%;
+                margin-bottom: 30px;
+                text-align: center;
+                margin-top: 40px;
+                text-align: center;
+                gap: 25px 30px;
+            }
+
+            .card-head:hover {
+                opacity: 0.5;
+            }
+
+            .card-one {
+                width: 100%;
+                height: 100%;
+                margin-left: 0rem;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .card-one:hover {
+                cursor: pointer;
+            }
+
+            .card-head img {
+                border-radius: 7px;
+                width: 100%;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-head img:hover {
+                transform: scale(1.01);
+            }
+
+            .badge {
+                text-align: center;
+                margin-top: 25px;
+            }
+
+            .badge .p1 {
+                font-size: 22px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .fa-star {
+                font-size: 15px;
+                color: orange;
+            }
+
+            .btn {
+                width: 90px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                border: none;
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .btn:hover {
+                background-color: transparent;
+                border: 1px solid black;
+                color: black;
+                cursor: pointer;
+            }
+
+            .btn1 {
+                width: 90px;
+                height: 50px;
+                background-color: rgb(230, 75, 75);
+                color: white;
+                font-size: medium;
+                border-radius: 7px;
+                border: none;
+                margin-left: 20px;
+            }
+
+            .btn1:hover {
+                background-color: transparent;
+                border: 1px solid black;
+                color: black;
+                cursor: pointer;
+            }
+
+            .hover-content {
+                margin-top: 20px;
+                transition: all 0.5s;
+                transform: translateY(100%);
+                overflow: hidden;
+                transition: all 0.5s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-one:hover .hover-content {
+                transform: translateY(-10%);
+            }
+
+            .floating_nav {
+                height: 96vh;
+                width: 50%;
+                position: absolute;
+                top: 5rem;
+                right: 0px;
+                background-color: white;
+                color: black;
+                transform: translate(110%);
+                transition: all 0.5s;
+                display: none;
+            }
+
+            .floating_active {
+                transform: translate(0%);
+                display: block;
+            }
+
+            .footer {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <img src="./img/logo4.png" alt="" />
+
+        <ul id="navlink">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+                <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <div class="cart">
+                <li>
+                    <a href="#"><i class="fa-sharp-duotone fa-solid fa-cart-arrow-down" id="cart_button"></i></a>
+                </li>
+                <p class="cart_number">0</p>
+            </div>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-bar"></i>
+    </nav>
+    <div class="floating_nav">
+        <h2>Add to cart page</h2>
+        <ul id="addedCart_items">
+            <li></li>
+        </ul>
+    </div>
+    </div>
+    <section class="product-gallery">
+        <div class="pro-one">
+            <h1>Our Products</h1><br>
+            <p>Here you can check out our new products with fair prices on Rymo.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/1.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Nike Air Zoom</p>
+                    <p>Rs.<span class="cart_price price_one">4,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/2.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Adidas Ultraboost</p>
+                    <p>Rs.<span class="cart_price price_one">2,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/3.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Puma Speedcat</p>
+                    <p>Rs.<span class="cart_price price_one">3,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/4.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Reebok Nano</p>
+                    <p>Rs.<span class="cart_price price_one">5,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/5.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Asics Gel-Kayano</p>
+                    <p>Rs.<span class="cart_price price_one">4,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/6.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">New Balance 1080</p>
+                    <p>Rs.<span class="cart_price price_one">5,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/7.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">New Balance 1080</p>
+                    <p>Rs.<span class="cart_price price_one">4,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/8.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Brooks Ghost</p>
+                    <p>Rs.<span class="cart_price price_one">8,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/9.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Mizuno Wave Rider</p>
+                    <p>Rs.<span class="cart_price price_one">14,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/10.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Saucony Triumph</p>
+                    <p>Rs.<span class="cart_price price_one">10,000</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/11.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Fila Run Fast</p>
+                    <p>Rs.<span class="cart_price price_one">12,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/12.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Under Armour Sprint</p>
+                    <p>Rs.<span class="cart_price price_one">5,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/13.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Puma Ignite</p>
+                    <p>Rs.<span class="cart_price price_one">14,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/14.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Reebok Nano</p>
+                    <p>Rs.<span class="cart_price price_one">10,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/15.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Asics Gel-Kayano</p>
+                    <p>Rs.<span class="cart_price price_one">5,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/16.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">New Balance 1080</p>
+                    <p>Rs.<span class="cart_price price_one">14,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/17.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Under Armour HOVR</p>
+                    <p>Rs.<span class="cart_price price_one">8,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/18.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Brooks Ghost</p>
+                    <p>Rs.<span class="cart_price price_one">12,199</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/19.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p class="p1">Mizuno Wave Rider</p>
+                    <p>Rs.<span class="cart_price price_one">15,000</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card-one">
+                <div class="card-head">
+                    <img src="./img/shop/20.jpg" class="cart_img" alt="">
+                </div>
+
+                <div class="badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <p class="p1">Saucony Triumph</p>
+                    <p>Rs.<span class="cart_price price_one">14,999</span></p>
+                </div>
+
+                <div class="hover-content">
+                    <button class="btn">Add Cart</button><br>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="row">
+            <div class="col-first">
+                <img src="./img/logo2.png" width=180 alt="">
+                <p>The site where you can get your best <br> products. Get best deals and coupons. <br> Keep shopping.
+                </p>
+            </div>
+
+            <div class="col">
+                <h3>Featured</h3>
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Others</a>
+                <a href="">Cosmetics</a>
+            </div>
+
+            <div class="Contact">
+                <h3>Contact Us</h3> <br>
+                <p>Address:Bengaluru</p><br>
+                <p>Phone:+91 6361302167
+                </p><br>
+                <p>Email:parannavarkoushalya@gmail.com
+                </p>
+            </div>
+
+            <div class="insta">
+                <h3>Instagram</h3>
+                <img src="./img/insta/1.jpg" alt="">
+                <img src="./img/insta/2.jpg" alt="">
+                <img src="./img/insta/3.jpg" alt=""><br>
+                <img src="./img/insta/4.jpg" alt="">
+                <img src="./img/insta/5.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <hr id="hr">
+    <div class="rights">
+        <p>Developed by - Koushalya Parannavar</p>
+    </div>
+</body>
+
+</html>

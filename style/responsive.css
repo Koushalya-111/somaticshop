@@ -1,0 +1,3183 @@
+@media screen and (max-width:576px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+
+    .navbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+    }
+
+    .nav_active {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+        z-index: 9000;
+        position: sticky;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 0.5s;
+    }
+
+
+    .container {
+        margin-top: 20px;
+        width: 100%;
+        height: 90vh;
+        background-image: url("../img/back.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container_body {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+
+    .div .h1 {
+        font-size: 35px;
+    }
+
+    .div span {
+        font-size: 35px;
+        color: orangered;
+    }
+
+    .logos {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .new {
+        max-width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        background-image: url("../img/new/1.jpg");
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        height: 400px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        background-image: url("../img/new/5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        background-image: url("../img/new/3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 0.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pro-one h1 {
+        font-weight: 500;
+        font-size: 25px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .pro-one h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 35px;
+        left: 46%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 40px;
+    }
+
+    .card-one {
+        margin-left: 1rem;
+        width: 90%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .card-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .mid-season {
+        max-width: 100%;
+        height: 100vh;
+        background-image: url("../img/blog/banner/2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mid-season h3 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1 {
+        font-weight: 500;
+        font-size: 40px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 40%;
+    }
+
+    .watch-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 1rem;
+        width: 90%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .watch-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .watch-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .watch-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .shoe-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .shoe-one {
+        margin-left: 1rem;
+        width: 90%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .shoes-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .shoe-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .footer {
+        max-width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        left: 2rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+        display: none;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+        display: block;
+    }
+
+    .slider {
+        display: none;
+    }
+}
+
+
+
+/* @media screen and (min-width:345px) and (max-width:376px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+    }
+
+    .nav_active {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+        z-index: 9000;
+        position: sticky;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 0.5s;
+    }
+
+
+    .container {
+        margin-top: 20px;
+        width: 100%;
+        height: 90vh;
+        background-image: url("../img/back.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .container_body {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 15px;
+    }
+
+    .div .h1 {
+        font-size: 35px;
+    }
+
+    .div span {
+        font-size: 35px;
+        color: orangered;
+    }
+
+    .logos {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0;
+    }
+
+    .logos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .new {
+        max-width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        background-image: url("../img/new/1.jpg");
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        height: 400px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        background-image: url("../img/new/5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        background-image: url("../img/new/3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 0.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pro-one h1 {
+        font-weight: 500;
+        font-size: 25px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .pro-one h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 35px;
+        left: 46%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 40px;
+    }
+
+    .card-one {
+        margin-left: 1rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .card-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .mid-season {
+        max-width: 100%;
+        height: 100vh;
+        background-image: url("../img/blog/banner/2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mid-season h3 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1 {
+        font-weight: 500;
+        font-size: 40px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 40%;
+    }
+
+    .watch-card {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 1rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .watch-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .watch-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .watch-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .shoe-card {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .shoe-one {
+        margin-left: 1rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .shoes-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .shoe-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .footer {
+        max-width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        left: 2rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+    }
+
+    .slider {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:377px) and (max-width:415px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .logos {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0;
+    }
+
+    .logos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new {
+        max-width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        height: 500px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        width: 100%;
+        height: 500px;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 1.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 40px;
+    }
+
+    .card-one {
+        margin-left: 2.1rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .mid-season {
+        margin-top: 2rem;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 39%;
+    }
+
+    .watch-card {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 2.1rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .watch-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .shoe-card {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .shoe-one {
+        margin-left: 2.1rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        right: 22.5rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+    }
+
+    .slider {
+        display: none;
+    }
+} */
+
+
+
+/* @media screen and (min-width:416px) and (max-width:431px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .logos {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0;
+    }
+
+    .logos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new {
+        max-width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        height: 500px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        width: 100%;
+        height: 500px;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 1.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 40px;
+    }
+
+    .card-one {
+        margin-left: 2.7rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .mid-season {
+        margin-top: 2rem;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 39%;
+    }
+
+    .watch-card {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 2.7rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .watch-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .shoe-card {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .shoe-one {
+        margin-left: 2.7rem;
+        max-width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        right: 23.5rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+        overflow-x: hidden;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+    }
+
+    .slider {
+        display: none;
+    }
+} */
+
+/* @media screen and (min-width:431px) and (max-width:541px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        max-width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+    }
+
+    .nav_active {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+        z-index: 9000;
+        position: sticky;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        display: block;
+        margin-right: 10px;
+    }
+
+
+    .container {
+        margin-top: 20px;
+        max-width: 100%;
+        height: 90vh;
+        background-image: url("../img/back.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container_body {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 15px;
+    }
+
+    .div .h1 {
+        font-size: 35px;
+    }
+
+    .div span {
+        font-size: 35px;
+        color: orangered;
+    }
+
+    .logos {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0;
+    }
+
+    .logos img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .container .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .new {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        background-image: url("../img/new/1.jpg");
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        height: 500px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        background-image: url("../img/new/5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        background-image: url("../img/new/3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 0.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pro-one h1 {
+        font-weight: 500;
+        font-size: 30px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .pro-one h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 35px;
+        left: 46%;
+    }
+
+    .card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 1.8rem;
+    }
+
+    .card-one {
+        margin-left: 1.7rem;
+        width: 80%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .card-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .mid-season {
+        max-width: 100%;
+        height: 90vh;
+        background-image: url("../img/blog/banner/2.jpg");
+        background-position: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.918);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mid-season h3 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1 {
+        font-weight: 500;
+        font-size: 40px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .watch-card {
+        margin-left: 2.3rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 1.7rem;
+        width: 80%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .watch-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .watch-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .watch-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 47%;
+    }
+
+    .shoe-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+        margin-left: 2.3rem;
+    }
+
+    .shoe-one {
+       margin-left: 1.7rem;
+        width: 80%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .shoes-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .shoe-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .footer {
+        max-width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        left: 2rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+    }
+
+    .slider {
+        display: none;
+    }
+} */
+
+@media screen and (min-width:577px) and (max-width:913px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        max-width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+    }
+
+    .nav_active {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+        z-index: 9000;
+        position: sticky;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        background-color: rgba(128, 128, 128, 0.253);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 0.5s;
+    }
+
+
+    .container {
+        margin-top: 20px;
+        max-width: 100%;
+        height: 90vh;
+        background-image: url("../img/back.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container_body {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 15px;
+    }
+
+    .div .h1 {
+        font-size: 35px;
+    }
+
+    .div span {
+        font-size: 35px;
+        color: orangered;
+    }
+
+    .logos {
+        width: 100%;
+        height: 30vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 0;
+    }
+
+    .logos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .new {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        background-image: url("../img/new/1.jpg");
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        height: 500px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        background-image: url("../img/new/5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        background-image: url("../img/new/3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 0.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pro-one h1 {
+        font-weight: 500;
+        font-size: 30px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .pro-one h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 35px;
+        left: 46%;
+    }
+
+    .card {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 2.4rem;
+    }
+
+    .card-one {
+        margin-left: 0rem;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .card-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .mid-season {
+        max-width: 100%;
+        height: 90vh;
+        background-image: url("../img/blog/banner/2.jpg");
+        background-position: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.918);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mid-season h3 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1 {
+        font-weight: 500;
+        font-size: 40px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .watch-card {
+        margin-left: 2.3rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 0rem;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .watch-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .watch-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .watch-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 47%;
+    }
+
+    .shoe-card {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        margin-left: 2.3rem;
+    }
+
+    .shoe-one {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .shoes-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .shoe-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .footer {
+        max-width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        left: 2rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17.5rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+        display: none;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+        display: block;
+    }
+
+    .slider {
+        display: none;
+    }
+}
+
+
+/* @media screen and (min-width:821px) and (max-width:912px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        max-width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+    }
+
+    .nav_active {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.521);
+        z-index: 9000;
+        position: sticky;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #navlink {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #navlink li {
+        padding-top: 5px;
+    }
+
+    #menu-bar {
+        display: block;
+        margin-right: 10px;
+    }
+
+
+    .container {
+        margin-top: 20px;
+        max-width: 100%;
+        height: 90vh;
+        background-image: url("../img/back.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container_body {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 15px;
+    }
+
+    .div .h1 {
+        font-size: 35px;
+    }
+
+    .div span {
+        font-size: 35px;
+        color: orangered;
+    }
+
+    .logos {
+        width: 100%;
+        height: 30vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 0;
+    }
+
+    .logos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .new {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new .col-1 {
+        background-image: url("../img/new/1.jpg");
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        padding-top: 6rem;
+        height: 40rem;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0.5rem;
+    }
+
+    .new .col-2 {
+        background-image: url("../img/new/5.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60rem;
+        padding-top: 10rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .new .col-3 {
+        background-image: url("../img/new/3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50rem;
+        padding-top: 10rem;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 0.5rem;
+    }
+
+    .product-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pro-one h1 {
+        font-weight: 500;
+        font-size: 30px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .pro-one h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 35px;
+        left: 46%;
+    }
+
+    .card {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 2.4rem;
+    }
+
+    .card-one {
+        margin-left: 0rem;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .card-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .card-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .mid-season {
+        max-width: 100%;
+        height: 90vh;
+        background-image: url("../img/blog/banner/2.jpg");
+        background-position: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .mid-season h1 {
+        color: rgba(255, 255, 255, 0.918);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mid-season h3 {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .watch-collection {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-4 h1 {
+        font-weight: 500;
+        font-size: 40px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-4 h1:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        border: 2px solid red;
+        top: 50px;
+        left: 45%;
+    }
+
+    .watch-card {
+        margin-left: 2.3rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
+
+    .watch-one {
+        margin-left: 0rem;
+        border: 2px solid blue;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .watch-head img {
+        max-width: 100%;
+        height: 390px;
+    }
+
+    .watch-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .fa-star {
+        font-size: 12px;
+        color: orange;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        border: none;
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .btn1 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(230, 75, 75);
+        color: white;
+        font-size: medium;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .hover-content {
+        margin-top: 40px;
+        transition: all 0.5s;
+        transform: translateY(100%);
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .watch-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .shoes-collection {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-5 h1 {
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .col-5 h1:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        border: 2px solid red;
+        top: 50px;
+        left: 47%;
+    }
+
+    .shoe-card {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        margin-left: 2.3rem;
+    }
+
+    .shoe-one {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .shoe-head img {
+        width: 100%;
+        height: 390px;
+    }
+
+    .shoes-badge .p1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .shoe-one:hover .hover-content {
+        transform: translateY(-15%);
+    }
+
+    .footer {
+        max-width: 100%;
+        height: auto;
+        background-color: black;
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+        color: white;
+    }
+
+    .col-first p {
+        color: white;
+        line-height: 1.5;
+    }
+
+    .col h3 {
+        font-size: 25px;
+        margin-right: 10rem;
+    }
+
+    .col a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .Contact h3 {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .insta img {
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .col-first {
+        margin-right: 2rem;
+    }
+
+    .insta h3 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 9px;
+        margin-right: 9rem;
+    }
+
+    .cart {
+        margin-top: 0.5rem;
+        display: inline-block;
+        position: relative;
+    }
+
+    .cart_number {
+        position: absolute;
+        top: -11px;
+        left: 2rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding: 1px;
+        border-radius: 50%;
+    }
+
+    #cart_button {
+        position: relative;
+    }
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+    }
+
+    .slider {
+        display: none;
+    }
+} */
+
+@media screen and (min-width:914px) and (max-width:1281px) {
+
+    .floating_nav {
+        height: 96vh;
+        width: 100%;
+        position: absolute;
+        top: 17.5rem;
+        right: 0px;
+        background-color: white;
+        color: black;
+        transform: translate(110%);
+        transition: all 0.5s;
+        display: none;
+    }
+
+    .floating_active {
+        transform: translate(0%);
+        display: block;
+    }
+
+    .product-gallery {
+        height: auto;
+    }
+
+    .shoes-collection {
+        height: auto;
+    }
+
+    .watch-collection {
+        height: auto;
+    }
+
+    .logos {
+        height: 15rem;
+    }
+
+    .new {
+        height: auto;
+    }
+
+    .new .col-1 {
+        height: 400px;
+        width: 100%;
+    }
+
+    .new .col-2 {
+        height: 400px;
+    }
+
+    .new .col-3 {
+        height: 400px;
+    }
+
+    .footer {
+        height: auto;
+    }
+}
